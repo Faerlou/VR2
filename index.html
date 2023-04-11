@@ -25,19 +25,13 @@
   </head>
   <body>
     <a-scene>
-      <a-assets>
-        <img id="1" crossorigin="anonymous" src="1.png">
-      </a-assets>
-
-      <!-- 360-degree image. -->
+     
+	    <!-- 360-degree image. -->
       <a-sky id="decav" radius="10" src="decav.png"
-      <!--       animation__fade="property: components.material.material.color; type: color; from: #FFF; to: #000; dur: 300; startEvents: fade"
-             animation__fadeback="property: components.material.material.color; type: color; from: #000; to: #FFF; dur: 300; startEvents: animationcomplete__fade">-->
 	  </a-sky>
 
       <!-- Image links. -->
-     <a-entity id="1" layout="type: line; margin: 1.5" position="0 1 1">
-      <!--  <a-entity template="src: #link" data-src="#1" data-thumb="#1"></a-entity> -->
+     <a-entity text="value: push my: nLINK" scale="1.5 1.5 1.5" position="0 -0.1 1" color="black" link="href: https://faerlou.github.io/Coin/">
       </a-entity>
    
       
