@@ -19,9 +19,9 @@
         event-set__mouseleave="scale: 1 1 1"
         event-set__click="_target: #image-360; _delay: 300; material.src: ${src}"
         proxy-event="event: click; to: #image-360; as: fade"
-    <!--  sound="on: click; src: #click-sound"> --> 
+        sound="on: click; src: #click-sound"> 
 	  </a-entity>
-    </script>
+    </script> -->
   </head>
   <body>
     <a-scene>
@@ -36,11 +36,12 @@
 	  </a-sky>
 
       <!-- Image links. -->
-      <a-entity id="link" layout="type: line; margin: 1.5" position="0 1 1">
-        <a-entity template="src: #link" data-src="#1" data-thumb="#1"></a-entity>
+     <a-href="https://faerlou.github.io/Coin/"> <a-entity id="1" layout="type: line; margin: 1.5" position="0 1 1">
+      <!--  <a-entity template="src: #link" data-src="#1" data-thumb="#1"></a-entity> -->
       </a-entity>
-
-      <!-- Camera + cursor. -->
+      </a>
+      
+	  <!-- Camera + cursor. -->
       <a-entity camera look-controls>
         <a-cursor
           id="cursor"
