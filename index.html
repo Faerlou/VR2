@@ -27,8 +27,6 @@
     <a-scene>
       <a-assets>
         <img id="1" crossorigin="anonymous" src="1.png">
-        
-
       </a-assets>
 
       <!-- 360-degree image. -->
@@ -38,8 +36,8 @@
 	  </a-sky>
 
       <!-- Image links. -->
-      <a-entity id="1" layout="type: line; margin: 1.5" position="0 -1 -4">
-        <a-entity template="src: 1.png" data-src="1.png" data-thumb="1.png"></a-entity>
+      <a-entity id="link" layout="type: line; margin: 1.5" position="0 1 1">
+        <a-entity template="src: #link" data-src="#1" data-thumb="#1"></a-entity>
       </a-entity>
 
       <!-- Camera + cursor. -->
