@@ -10,18 +10,6 @@
     <script src="https://unpkg.com/aframe-template-component@3.2.1/dist/aframe-template-component.min.js"></script>
     <script src="https://unpkg.com/aframe-proxy-event-component@2.1.0/dist/aframe-proxy-event-component.min.js"></script>
     
-    <!-- Image link template to be reused. -->
-    <script id="link" type="text/html">
-      <a-entity class="link"
-        geometry="primitive: plane; height: 1; width: 1"
-        material="shader: flat; src: ${thumb}"
-        event-set__mouseenter="scale: 1.2 1.2 1"
-        event-set__mouseleave="scale: 1 1 1"
-        event-set__click="_target: #image-360; _delay: 300; material.src: ${src}"
-        proxy-event="event: click; to: #image-360; as: fade"
-        sound="on: click; src: #click-sound"> 
-	  </a-entity>
-    </script> -->
   </head>
   <body>
     <a-scene>
@@ -31,7 +19,7 @@
 	  </a-sky>
 
       <!-- Image links. -->
-     <a-entity text="value: push my: nLINK" scale="1.5 1.5 1.5" position="0 -0.1 1" color="black" link="href: https://faerlou.github.io/Coin/">
+     <a-entity text="push my" scale="1.5 1.5 1.5" position="0 -0.1 1" color="black" href="https://faerlou.github.io/Coin/">
       </a-entity>
    
       
