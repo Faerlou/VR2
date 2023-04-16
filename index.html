@@ -11,9 +11,17 @@
     <a-scene>
       <a-sky src="decav.png" rotation="0 -130 0"></a-sky>
       
-      
-
   <a-entity gltf-model="url(coin.gltf)" rotation="90 0 0" scale="0.2 0.2 0.2"></a-entity>
+      
+      <a-entity camera look-controls>
+        <a-cursor
+          id="cursor"
+          animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150"
+          animation__fusing="property: fusing; startEvents: fusing; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1500"
+          event-set__mouseenter="_event: mouseenter; color: springgreen"
+          event-set__mouseleave="_event: mouseleave; color: black"
+          raycaster="objects: .link"></a-cursor>
+      </a-entity>
       
     </a-scene>
   </body>
