@@ -13,23 +13,12 @@
            
 <a-entity class="link" link="href:https://faerlou.github.io/Coin/" gltf-model="url(coin.gltf)" position="0.5 -0.9 0.1" rotation="90 0 0" scale="0.2 0.2 0.2"></a-entity>
       
-      <a-text font="kelsonsans" 
-              value="Coin"
-              link="href:https://faerlou.github.io/Coin/"
-              geometry="primitive:plane; width:auto; height:auto"
-              material="color:black; shader:flat; visible:true"
-              event-set__enter="_enter:mouseenter; text.color:black"
-              event-set__leave="_leave:mouseleave; text.color:white"
-              width="6"
-              position="-2.5 0.25 -1.5"
-              rotation="0 15 0"></a-text>
-      
           <a-camera>
     <a-cursor
       id="cursor"
-      animation__click="property: scale; from: 0.1 0.1 0.1; to: 1 1 1; easing: easeInCubic; dur: 150; startEvents: click"
-      animation__clickreset="property: scale; to: 0.1 0.1 0.1; dur: 1; startEvents: animationcomplete__click"
-      animation__fusing="property: scale; from: 1 1 1; to: 0.1 0.1 0.1; easing: easeInCubic; dur: 150; startEvents: fusing"></a-cursor>
+      animation__click="property: scale; from: 0.5 0.5 0.5; to: 1 1 1; easing: easeInCubic; dur: 150; startEvents: click"
+      animation__clickreset="property: scale; to: 0.5 0.5 0.5; dur: 1; startEvents: animationcomplete__click"
+      animation__fusing="property: scale; from: 1 1 1; to: 0.5 0.5 0.5; easing: easeInCubic; dur: 150; startEvents: fusing"></a-cursor>
   </a-camera>
       
     </a-scene>
